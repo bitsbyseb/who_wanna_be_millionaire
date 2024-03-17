@@ -16,4 +16,4 @@ Feel free to clone this repository and play the game yourself!
  npm run dev
  ```
 
- * Enjoy it, resolve it and create your own questions writing over the questions.json file.
+ * Enjoy it, resolve it and create your own questions writing over the data.ts file.

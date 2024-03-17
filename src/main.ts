@@ -1,17 +1,11 @@
-import { Question, questionObj } from "./models/question";
+import { Question} from "./models/question";
 import "./components/questionForm";
+import data from './data';
 import enableObserver from "./utils/enableObserver";
 const nameForm = document.querySelector('#nameForm');
 const main = document.querySelector('main');
 // yes i drank a lot of bottles when i did this
 const results: boolean[] = [];
-
-const getData = async (): Promise<questionObj[]> => {
-    const res = await fetch('/src/questions.json');
-    const data = res.json();
-    return data;
-}
-const data = await getData();
 const questionInstances = data.map(x => new Question(x));
 
 

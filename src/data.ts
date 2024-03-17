@@ -1,4 +1,4 @@
-[
+export default [
     {
         "question": "which of them is a programming language name?",
         "options": [
