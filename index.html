@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who wanna be millionaire</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <main class="w-full min-h-screen flex flex-col justify-center items-center gap-20 bg-[#1B1B1B]">
+    <h2 class="text-5xl text-red-600 text-center font-bold">Who Wants to Be a Millionaire?</h2>
+    <form  id="nameForm" class="w-3/4 h-auto flex flex-col items-center justify-center text-4xl gap-5">
+      <label for="name" class="text-red-600 font-bold">Write your name</label>
+      <input type="text" autocomplete="name" required id="name" class="outline-none border-red-600 border-4 rounded-2xl w-2/4 pl-6 box-border focus:h-9 transition-all duration-200 ease-linear focus:border-x-0 focus:border-t-0
+      focus:border-b-4 focus:p-8 focus:rounded-none caret-red-600 focus:bg-red-100">
+      <button class="w-auto h-20 text-center grid place-items-center rounded-lg bg-red-600 px-5 text-[#1B1B1B] font-bold cursor-pointer active:bg-[#1B1B1B] active:border-4 active:border-red-600 active:text-red-600">¡Start!</button>
+    </form>
+  </main>
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
