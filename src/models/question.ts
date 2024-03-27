@@ -1,28 +1,18 @@
-export interface questionObj {
+export interface QuestionObj {
     question: string,
     options: string[],
-    correct_options: string[]
+    correct_options: string[],
+    isCorrect(input:string):boolean,
 }
 
-export class Question {
-    private question: string;
-    private options: string[];
-    private correct_options: string[];
-    constructor(quest: questionObj) {
-        this.question = quest.question;
-        this.options = quest.options;
-        this.correct_options = quest.correct_options;
-    }
+export class Question implements QuestionObj{
+    constructor(
+        public question:string,
+        public options:string[],
+        public correct_options:string[]
+        ) {}
 
-    isCorrect(input: string) {
+    isCorrect(input: string): boolean {
        return this.correct_options.includes(input);
-    }
-
-    get giveOptions() {
-        return this.options;
-    }
-
-    get giveTitle() {
-        return this.question;
     }
 }

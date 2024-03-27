@@ -2,11 +2,17 @@ import { Question} from "./models/question";
 import "./components/questionForm";
 import data from './data';
 import enableObserver from "./utils/enableObserver";
+
+// DOM nodes
 const nameForm = document.querySelector('#nameForm');
 const main = document.querySelector('main');
-// yes i drank a lot of bottles when i did this
+
+
 const results: boolean[] = [];
-const questionInstances = data.map(x => new Question(x));
+const questionInstances = data.map(x => {
+    const {correct_options,options,question} = x;
+    return new Question(question,options,correct_options);
+});
 
 
 function showResults () {
@@ -29,8 +35,8 @@ function quiz(questions: Question[], index: number) {
             const quest = questions[index];
             const questionComponent = document.createElement('form-question');
             enableObserver(questionComponent);
-            questionComponent.setAttribute('options',questions[index].giveOptions.join(','));
-            questionComponent.setAttribute('title', quest.giveTitle);
+            questionComponent.setAttribute('options',questions[index].options.join(','));
+            questionComponent.setAttribute('title', quest.question);
             main.append(questionComponent);
     
     
