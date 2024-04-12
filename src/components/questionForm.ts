@@ -7,7 +7,7 @@ export class QuestionForm extends HTMLElement {
   }
 
   attributeChangedCallback(name: string, oldValue: string, newValue: string) {
-    oldValue !== newValue ? this.setAttribute(`${name}`, newValue) : "";
+    oldValue !== newValue ? this.setAttribute(name, newValue) : false;
   }
 
   connectedCallback() {
