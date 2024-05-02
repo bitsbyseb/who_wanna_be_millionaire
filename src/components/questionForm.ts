@@ -3,7 +3,6 @@ export class QuestionForm extends HTMLElement {
 
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
   }
 
   attributeChangedCallback(name: string, oldValue: string, newValue: string) {
@@ -13,7 +12,7 @@ export class QuestionForm extends HTMLElement {
   connectedCallback() {
     this.classList.add("invisible");
     this.style.height = "auto";
-    this.shadowRoot?.appendChild(this.getTemplate.content.cloneNode(true));
+    this.append(this.getTemplate.content.cloneNode(true));
   }
 
   disconnectedCallback() {
@@ -87,12 +86,11 @@ export class QuestionForm extends HTMLElement {
             `;
   }
 
-  private get getTemplate() {
+  get getTemplate() {
     const template = document.createElement("template");
     template.innerHTML = `
-        ${this.getStyles}
         <form id="formQuestion">
-            <h2 class="title">${this.getAttribute("title")}</h2>
+            <h2 class="text-red-600">${this.getAttribute("title")}</h2>
             ${this.selectElement.outerHTML}
             <button class="buttonSubmit">Continue</button>
         </form>

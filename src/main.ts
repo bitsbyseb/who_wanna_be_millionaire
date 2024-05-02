@@ -40,7 +40,7 @@ function quiz(questions: Question[], index: number) {
             main.append(questionComponent);
     
     
-            const formQuestion = questionComponent.shadowRoot?.querySelector('#formQuestion');
+            const formQuestion = questionComponent.querySelector('#formQuestion');
             formQuestion?.addEventListener('submit', (e) => {
                 e.preventDefault();
                 const selectElement = formQuestion.querySelector('select');

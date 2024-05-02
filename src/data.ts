@@ -1,137 +1,27 @@
 export default [
     {
-        "question": "which of them is a programming language name?",
-        "options": [
-            "vs code",
-            "C#",
-            "notepad",
-            "windows"
-        ],
-        "correct_options": [
-            "C#"
-        ]
+        "question": "¿Cuál es una materia prima comúnmente utilizada en la producción de biodiésel?",
+        "options": ["Maíz", "Papel", "Plástico", "Madera"],
+        "correct_options": ["Maíz"]
     },
     {
-        "question": "whats the name of the first computer network?",
-        "options": [
-            "vs code",
-            "Network",
-            "Internet",
-            "Arpanet"
-        ],
-        "correct_options": [
-            "Arpanet"
-        ]
+        "question": "¿Qué proceso se utiliza para convertir los aceites vegetales en biodiésel?",
+        "options": ["Fermentación", "Destilación", "Transesterificación", "Electrólisis"],
+        "correct_options": ["Transesterificación"]
     },
     {
-        "question": "What is the process of converting written code into a machine-readable format called?",
-        "options": [
-            "Interpreting, Compiling, Executing, Translating"
-        ],
-        "correct_options": [
-            "Compiling"
-        ]
+        "question": "¿Cuál es una ventaja ambiental del uso de biodiésel en comparación con el combustible diesel convencional?",
+        "options": ["Mayor emisión de gases de efecto invernadero", "Menor dependencia de recursos renovables", "Reducción de emisiones de dióxido de azufre", "Incremento en la deforestación"],
+        "correct_options": ["Reducción de emisiones de dióxido de azufre"]
     },
     {
-        "question": "Which of the following is NOT a common programming paradigm?",
-        "options": [
-            "Object-Oriented Programming, Procedural Programming, Functional Programming, Visual Programming"
-        ],
-        "correct_options": [
-            "Visual Programming"
-        ]
+        "question": "¿Cuál es una limitación técnica del uso de biodiésel en vehículos?",
+        "options": ["Mayor potencia del motor", "Menor lubricidad", "Mayor estabilidad térmica", "Menor corrosividad"],
+        "correct_options": ["Menor lubricidad"]
     },
     {
-        "question": "What symbol is typically used to denote comments in Python code?",
-        "options": [
-            "//","#",";","%"
-        ],
-        "correct_options": [
-            "#"
-        ]
-    },
-    {
-        "question": "A loop that continues to repeat as long as a certain condition is true is called a:",
-        "options": [
-            "For loop",
-            "While loop",
-            "Do-while loop",
-            "Conditional loop"
-        ],
-        "correct_options": [
-            "While loop"
-        ]
-    },
-    {
-        "question": "What does HTML stand for?",
-        "options": [
-            "Hyper Text Markup Language",
-            "High Tech Markup Language",
-            "Hyperlink Texting Method",
-            "HyperText Modeling Language"
-        ],
-        "correct_options": [
-            "Hyper Text Markup Language"
-        ]
-    },
-    {
-        "question": "The term 'bug' in programming refers to:",
-        "options": [
-            "A new software feature",
-            "A cosmetic design flaw",
-            "An error in the code",
-            "A unit of data storage"
-        ],
-        "correct_options": [
-            "An error in the code"
-        ]
-    },
-    {
-        "question": "Git is a popular version control system used for:",
-        "options": [
-            "Creating websites",
-            "Designing user interfaces",
-            "Tracking code changes",
-            "Managing large databases"
-        ],
-        "correct_options": [
-            "Tracking code changes"
-        ]
-    },
-    {
-        "question": "In web development, what language is used to define the structure and content of a webpage?",
-        "options": [
-            "CSS",
-            "JavaScript",
-            "Python",
-            "HTML"
-        ],
-        "correct_options": [
-            "HTML"
-        ]
-    },
-    {
-        "question": "What is an API (Application Programming Interface)?",
-        "options": [
-            "A search engine",
-            "A website layout",
-            "A set of code instructions",
-            "A communication protocol between applications"
-        ],
-        "correct_options": [
-            "A communication protocol between applications"
-        ]
-    },
-    {
-        "question": "Which of the following is NOT a widely used programming language?",
-        "options": [
-            "Swift",
-            "C++",
-            "Java",
-            "Excel VBA"
-        ],
-        "correct_options": [
-            "Excel VBA"
-        ]
+        "question": "¿Cuál es una aplicación alternativa del biodiésel además de su uso como combustible para vehículos?",
+        "options": ["Cocina", "Fabricación de plásticos", "Generación de electricidad", "Producción de jabón"],
+        "correct_options": ["Producción de jabón"]
     }
 ]
