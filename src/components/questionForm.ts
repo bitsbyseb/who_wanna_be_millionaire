@@ -34,58 +34,6 @@ export class QuestionForm extends HTMLElement {
     return select;
   }
 
-  private get getStyles() {
-    return `
-            <style>
-            * {
-                box-sizing: border-box;
-                font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            }
-            
-
-            #formQuestion {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                gap: 20px;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .title {
-                color:#dc2626;
-                font-size: 30px;
-                font-weight: bold;
-                text-wrap: pretty;
-                align-text:center;
-            }
-
-            .options {
-                width: 50%;
-                font-size: 25px;
-                align-self:center;
-            }
-
-            .buttonSubmit {
-                padding: 10px;
-                text-align: center;
-                color: #1B1B1B;
-                font-size: 20px;
-                border: 4px solid #dc2626;
-                background: #dc2626;
-                font-weight: bold;
-                border-radius: 8px;
-            }
-            .buttonSubmit:active {
-                color: #dc2626;
-                background: #1B1B1B;
-                border: 4px solid #dc2626;
-            }
-            </style>
-            `;
-  }
-
   get getTemplate() {
     const template = document.createElement("template");
     template.innerHTML = `
