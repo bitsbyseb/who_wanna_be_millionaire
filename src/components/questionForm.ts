@@ -40,7 +40,7 @@ export class QuestionForm extends HTMLElement {
         <form id="formQuestion">
             <h2 class="text-red-600">${this.getAttribute("title")}</h2>
             ${this.selectElement.outerHTML}
-            <button class="buttonSubmit">Continue</button>
+            <button class="buttonSubmit">Continuar</button>
         </form>
         `;
     return template;

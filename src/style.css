@@ -14,7 +14,6 @@ body {
 
 .invisible {
     position: absolute;
-    opacity: 0;
     transform: translateY(100px);
 }
 
@@ -28,13 +27,17 @@ body {
 }
 
 #formQuestion {
-    @apply w-auto h-auto backdrop-blur-3xl flex flex-col justify-center items-center gap-10 p-10 rounded-lg;
+    @apply w-full h-auto backdrop-blur-3xl flex flex-col justify-center items-center gap-10 p-10 rounded-lg;
 }
 
 #formQuestion h2 {
-    @apply text-green-600 font-bold text-2xl;
+    @apply text-green-600 text-center font-bold text-2xl;
 }
 
 #formQuestion button {
     @apply w-auto h-auto py-5 text-center grid place-items-center rounded-lg bg-green-600 px-5 text-[#1B1B1B] font-bold cursor-pointer active:bg-transparent active:border-4 active:border-green-600 active:text-green-600;
+}
+
+form-question {
+    @apply overflow-hidden;
 }

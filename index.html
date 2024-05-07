@@ -8,13 +8,13 @@
   <link rel="shortcut icon" href="/vite.svg" type="image/x-icon">
 </head>
 <body>
-  <main class="w-full min-h-screen flex flex-col justify-center items-center gap-10 bg-[url(/bg.jpg)] bg-cover">
+  <main class="w-full h-screen grid place-items-center gap-10 bg-[url(/bg.jpg)] bg-cover">
     <div class="w-auto h-auto backdrop-blur-3xl flex flex-col justify-center items-center gap-10 p-10 rounded-lg">
       <h2 class="text-5xl text-green-600 text-center font-bold">¿Cuanto Sabes Sobre Biodiesel?</h2>
-      <p class="text-green-600 text-2xl"><i>Un Proyecto Hecho Desde La Universidad de Cundinamarca</i></p>
-      <form  id="nameForm" class="w-3/4 h-auto flex flex-col items-center justify-center text-4xl gap-5">
+      <p class="text-green-600 text-2xl text-center"><i>Un Proyecto Hecho Desde La Universidad de Cundinamarca</i></p>
+      <form  id="nameForm" class="w-full h-auto flex flex-col items-center justify-center lg:text-4xl max-sm:text-3xl gap-5">
         <label for="name" class="text-green-600 font-bold">Escribe Tu Nombre</label>
-        <input type="text" autocomplete="name" required id="name" class="outline-none border-green-600 border-4 rounded-2xl w-2/4 pl-6 box-border focus:h-9 transition-all duration-200 ease-linear focus:border-x-0 focus:border-t-0
+        <input type="text" autocomplete="name" required id="name" class="w-full outline-none text-center border-green-600 border-4 rounded-2xl pl-6 box-border focus:h-9 transition-all duration-200 ease-linear focus:border-x-0 focus:border-t-0
         focus:border-b-4 focus:p-8 focus:rounded-none caret-green-600 focus:bg-green-100">
         <button class="w-auto h-20 text-center grid place-items-center rounded-lg bg-green-600 px-5 text-[#1B1B1B] font-bold cursor-pointer active:bg-transparent active:border-4 active:border-green-600 active:text-green-600">¡Inicia!</button>
       </form>
