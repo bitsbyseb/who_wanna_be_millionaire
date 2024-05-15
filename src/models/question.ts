@@ -1,18 +1,10 @@
-export interface QuestionObj {
-    question: string,
-    options: string[],
-    correct_options: string[],
-    isCorrect(input:string):boolean,
-}
-
-export class Question implements QuestionObj{
+export class Question {
     constructor(
-        public question:string,
-        public options:string[],
-        public correct_options:string[]
-        ) {}
-
+        public readonly question: string,
+        public readonly options: string[],
+        public readonly correct_options: string[]
+    ) { }
     isCorrect(input: string): boolean {
-       return this.correct_options.includes(input);
+        return this.correct_options.includes(input);
     }
 }

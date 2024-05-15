@@ -1,5 +1,6 @@
 export class QuestionForm extends HTMLElement {
-  static observedAttributes = ["options", "title"];
+
+  static get observedAttributes() { return ["options", "title"]; }
 
   constructor() {
     super();

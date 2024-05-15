@@ -1,5 +1,5 @@
-function enableObserver(target:HTMLElement):void {
-    function handleObserver(entries:IntersectionObserverEntry[],_observer:IntersectionObserver):void {
+function enableObserver(target:HTMLElement) {
+    function handleObserver(entries:IntersectionObserverEntry[],_:IntersectionObserver):void {
         entries.forEach(x => {
             if (x.isIntersecting) {
                 target.classList.remove('invisible');
